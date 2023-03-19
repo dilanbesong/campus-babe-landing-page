@@ -1,0 +1,106 @@
+.caroselSec {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+  .caroselSec .caroselHeader {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    /* border: 1px solid blue; */
+}
+.caroselHeader , h1 {
+  width: 40%;
+  word-break: break-all;
+  font-size: 1.80rem;
+}
+.caroselBtn-container {
+    align-self:center;
+}
+.caroselBtn-container button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: antiquewhite;
+    z-index:1;
+    border: none;
+    border-radius: 8px;
+    transition: 1s;
+}
+.caroselBtn-container button:hover {
+    cursor: pointer;
+    outline-style: double;
+}
+.caroselBtn-container button:active {
+    outline-style: double;
+    outline-color:rgba(110, 110, 197, 0.75) ;
+    transition: 1s;
+}
+.caroselBtn-container .btn-left {
+    background-color:rgba(19, 19, 179, 0.75);
+    box-shadow: 0 0 5px 3px rgba(110, 110, 197, 0.75);
+}
+.caroselBtn-container .btn-right {
+    background-color: rgba(70, 70, 202, 0.75);
+}
+.slider-sec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:500px;
+    overflow-x: hidden;
+}
+.all_slide {
+   width: 100%;
+   overflow-x:auto;
+   display: inline-flex;
+   justify-content: space-between;
+   min-height:500px;
+}
+.a_slide {
+    width: 33%;
+    height: 380px;
+    cursor: grab;
+}
+.slideImg {
+    position:relative;
+    background-image: url(https://plus.unsplash.com/premium_photo-1664301941713-f5c0dcf526dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29uZ3Jlc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 380px;
+}
+.slide-title {
+    position:absolute;
+    bottom:-30%;
+    left:5%;
+    right: 5%;
+    width: 90%;
+    padding-top: 2rem;
+    height: 150px;
+    text-align: center;
+    background-color:#ccc;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: bolder;
+}
+@media screen and (max-width:850px) {
+    .caroselSec {
+        width: 95%;
+    }
+    .caroselHeader {
+        flex-direction: column;
+    }
+    .caroselHeader h1 {
+        width: 95%;
+        font-size: 1.45rem;
+    }
+   
+}

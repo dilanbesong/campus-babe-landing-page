@@ -1,0 +1,53 @@
+.bg-intro {
+    position: relative;
+    top:-1rem;
+    min-height: 70vh;
+    
+    background-image: url(https://media.istockphoto.com/photos/amazon-rainforest-and-rivers-on-sunny-days-picture-id1366791542?b=1&k=20&m=1366791542&s=170667a&w=0&h=PVZNqYFwmnYA88-_8MF5BylLTiusfMfuP4XlLhVSU5c=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+}
+.intro-header {
+    width: 30%;
+    word-break: break-all;
+    color: #fff;
+    word-spacing:6px;
+    font-size: 3rem;
+}
+.intro-header > span {
+    color: orange;
+}
+
+ .text-intro {
+    width: 35%;
+    word-break: break-all;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    word-spacing: 10px;
+}
+.learnMore > a {
+   text-decoration: none;
+   font-size: 1.3rem;
+   text-align: center;
+   padding: 0.67rem;
+   background-color: orange;
+   color: #fff;
+   border-radius:4px;
+}
+
+@media screen and (max-width:900px) {
+    .bg-intro {
+        background-image: url(https://media.istockphoto.com/photos/high-angle-view-of-a-lake-and-forest-picture-id1337232523?b=1&k=20&m=1337232523&s=170667a&w=0&h=ueU7jzT1l-Qs_i4HwtBHO00RLGwgnlzRRKcja79EOgo=);
+    }
+    .intro-header, .text-intro {
+        width: 90%;
+        text-align: center;
+    }
+}
